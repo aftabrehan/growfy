@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import stl from './Home.module.scss'
 
 const Home = () => (
