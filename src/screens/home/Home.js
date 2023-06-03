@@ -1,8 +1,14 @@
+import Head from 'next/head'
+
 /* eslint-disable @next/next/no-img-element */
 import stl from './Home.module.scss'
 
 const Home = () => (
   <div className={stl.wrapper}>
+    <Head>
+      <title>Growfy - Marketing Solutions that grow your business.</title>
+    </Head>
+
     <div className="wrapper">
       <header className="header">
         <div className="header__container">
