@@ -1,3 +1,13 @@
+# Growfy
+
+A dark web landing page for marketing solution build with React, Next.js, SCSS, and deployed on Vercel.
+
+##### Preview
+
+<div align="center">
+  <img src="https://github.com/aftabrehan/growfy/assets/93012310/0b21f3df-3aac-4a96-b0e5-c0be714ead0a" alt="growfy-poster"/>
+</div>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
