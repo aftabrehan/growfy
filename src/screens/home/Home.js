@@ -1,58 +1,21 @@
 import Head from 'next/head'
 
+import Header from 'components/header'
+
 /* eslint-disable @next/next/no-img-element */
 import stl from './Home.module.scss'
+
+// https://growfy-template.webflow.io
 
 const Home = () => (
   <div className={stl.wrapper}>
     <Head>
-      <title>Growfy - Marketing Solutions that grow your business.</title>
+      <title>Growfy - Marketing Solutions that grow your b usiness.</title>
     </Head>
 
     <div className="wrapper">
-      <header className="header">
-        <div className="header__container">
-          <a href="" className="header__logo">
-            <img src="/img/Logo.svg" alt="logo" />
-          </a>
-          <nav className="header__menu menu">
-            <div className="menu__body">
-              <ul className="menu__list">
-                <li className="menu__item">
-                  <a href="" className="menu__link">
-                    Home
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="" className="menu__link">
-                    About
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="" className="menu__link">
-                    Pages
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="" className="menu__link">
-                    Services
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <a href="" className="header__cart cart-header">
-            <span className="cart-header__text">Cart</span>
-            <span className="cart-header__quantity">0</span>
-          </a>
-          <a href="" className="header__button button">
-            Get started
-          </a>
-          <button className="icon-menu" type="button">
-            <span></span>
-          </button>
-        </div>
-      </header>
+      <Header />
+
       <main className="page">
         <section className="page__main main">
           <div className="main__container">
@@ -63,9 +26,10 @@ const Home = () => (
                 </h1>
                 <div className="header-main__text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor.
+                    Growfy is a template highly suitable for modern marketing
+                    agencies, digital studios, startups and businesses. The
+                    design is made in the dark style, which makes the site
+                    memorable and you can easily adapt it to your brand.
                   </p>
                 </div>
                 <div className="header-main__actions">

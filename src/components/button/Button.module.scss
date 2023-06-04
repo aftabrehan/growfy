@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30px;
+  background-color: #3d96f4;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease 0s;
+  line-height: 1.43;
+
+  &:hover {
+    background-color: #68a9f0;
+  }
+}
+
+.dark {
+  background: rgba(129, 129, 139, 0.2);
+
+  &:hover {
+    background: rgba(129, 129, 139, 0.4);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .button {
+    padding: 14px 20px;
+  }
+}
