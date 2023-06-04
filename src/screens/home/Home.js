@@ -4,6 +4,7 @@ import Header from 'components/header'
 
 /* eslint-disable @next/next/no-img-element */
 import stl from './Home.module.scss'
+import Button from 'components/button'
 
 // https://growfy-template.webflow.io
 
@@ -33,12 +34,8 @@ const Home = () => (
                   </p>
                 </div>
                 <div className="header-main__actions">
-                  <a href="" className="header-main__button button">
-                    Our services
-                  </a>
-                  <a href="" className="header-main__button button button_dark">
-                    Contact us
-                  </a>
+                  <Button label="Our services" />
+                  <Button label="Contact us" isDark />
                 </div>
               </div>
             </div>
@@ -102,9 +99,7 @@ const Home = () => (
                   </p>
                 </div>
                 <div className="header-main__actions">
-                  <a href="" className="header-main__button button">
-                    All services
-                  </a>
+                  <Button label="All services" />
                 </div>
               </div>
             </div>
@@ -249,9 +244,7 @@ const Home = () => (
                   </p>
                 </div>
                 <div className="header-main__actions">
-                  <a href="" className="header-main__button button">
-                    Get in touch
-                  </a>
+                  <Button label="Get in touch" />
                 </div>
               </div>
             </div>
@@ -359,9 +352,7 @@ const Home = () => (
                   </p>
                 </div>
                 <div className="header-main__actions">
-                  <a href="" className="header-main__button button">
-                    All Posts
-                  </a>
+                  <Button label="All Posts" />
                 </div>
               </div>
             </div>
@@ -469,12 +460,8 @@ const Home = () => (
               </div>
               <div className="start__column">
                 <div className="start__actions">
-                  <a href="" className="start__button button">
-                    Our services
-                  </a>
-                  <a href="" className="start__button button button_dark">
-                    Contact us
-                  </a>
+                  <Button label="Our services" />
+                  <Button label="Contact us" isDark />
                 </div>
               </div>
             </div>
@@ -602,9 +589,7 @@ const Home = () => (
                   required
                   className="subscribe__input"
                 />
-                <button type="submit" className="subscribe__button button">
-                  Subscribe
-                </button>
+                <Button type="submit" label="Subscribe" />
               </form>
             </div>
           </div>
