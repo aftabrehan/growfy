@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 
 import Header from 'components/header'
-
-/* eslint-disable @next/next/no-img-element */
-import stl from './Home.module.scss'
 import Button from 'components/button'
+import Footer from 'components/footer'
+
+import stl from './Home.module.scss'
 
 // https://growfy-template.webflow.io
 
@@ -468,141 +469,7 @@ const Home = () => (
           </div>
         </section>
       </main>
-      <footer className="footer">
-        <div className="footer__main main-footer">
-          <div className="main-footer__container">
-            <div className="main-footer__column">
-              <a href="" className="main-footer__logo">
-                <img src="/img/Logo.svg" alt="Logo" />
-              </a>
-              <div className="main-footer__text text">
-                <p>
-                  Growfy is a template highly suitable for modern marketing
-                  agencies, digital studios, startups and businesses. The design
-                  is made in the dark style, which makes the site memorable and
-                  you can easily adapt it to your brand.
-                </p>
-              </div>
-              <div className="main-footer__social social">
-                <a href="" className="social__link">
-                  <img src="/img/footer-image-01.svg" alt="social" />
-                </a>
-                <a href="" className="social__link">
-                  <img src="/img/footer-image-02.svg" alt="social" />
-                </a>
-                <a href="" className="social__link">
-                  <img src="/img/footer-image-03.svg" alt="social" />
-                </a>
-                <a href="" className="social__link">
-                  <img src="/img/footer-image-04.svg" alt="social" />
-                </a>
-                <a href="" className="social__link">
-                  <img src="/img/footer-image-05.svg" alt="social" />
-                </a>
-              </div>
-            </div>
-            <div className="main-footer__column">
-              <div className="main-footer__label">Pages</div>
-              <nav className="main-footer__menu menu-footer">
-                <ul className="menu-footer__list">
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Home
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      About
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Services
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Packages
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Blog
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="main-footer__column">
-              <div className="main-footer__label">Utility pages</div>
-              <nav className="main-footer__menu menu-footer">
-                <ul className="menu-footer__list">
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Instructions
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Style guide
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Licenses
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Changelog
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      404 Not found
-                    </a>
-                  </li>
-                  <li className="menu-footer__item">
-                    <a href="" className="menu-footer__link">
-                      Password protected
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="main-footer__column">
-              <div className="main-footer__label">
-                Subscribe to our newsletter
-              </div>
-              <div className="main-footer__text text">
-                Lorem ipsum dolor sit am consectetur adipiscing
-              </div>
-              <form action="" className="subscribe">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  required
-                  className="subscribe__input"
-                />
-                <Button type="submit" label="Subscribe" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div className="footer__bottom bottom-footer">
-          <div className="bottom-footer__container">
-            <div className="bottom-footer__copy">
-              © Growfy — Powered by Webflow Logo - Growfy Webflow Template —
-              Created by Elison Santos.
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   </div>
 )
