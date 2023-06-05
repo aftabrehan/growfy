@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Header from 'components/header'
 import Button from 'components/button'
+import Hero from 'components/hero'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -19,47 +20,8 @@ const Home = () => (
       <Header />
 
       <main className="page">
-        <section className="page__main main">
-          <div className="main__container">
-            <div className="main__content">
-              <div className="main__header header-main">
-                <h1 className="header-main__title">
-                  Marketing solutions that grow your business.
-                </h1>
-                <div className="header-main__text">
-                  <p>
-                    Growfy is a template highly suitable for modern marketing
-                    agencies, digital studios, startups and businesses. The
-                    design is made in the dark style, which makes the site
-                    memorable and you can easily adapt it to your brand.
-                  </p>
-                </div>
-                <div className="header-main__actions">
-                  <Button label="Our services" />
-                  <Button label="Contact us" isDark />
-                </div>
-              </div>
-            </div>
-            <div className="main__images images-main">
-              <div className="images-main__column">
-                <div className="images-main__item images-main__item_1">
-                  <img src="/img/main-img-01.jpg" alt="Image" />
-                </div>
-                <div className="images-main__item images-main__item_2">
-                  <img src="/img/main-img-02.jpg" alt="Image" />
-                </div>
-              </div>
-              <div className="images-main__column">
-                <div className="images-main__item images-main__item_3">
-                  <img src="/img/main-img-03.jpg" alt="Image" />
-                </div>
-                <div className="images-main__item images-main__item_4">
-                  <img src="/img/main-img-04.jpg" alt="Image" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
+
         <section className="page__clients clients">
           <div className="clients__container">
             <h2 className="clients__title">
