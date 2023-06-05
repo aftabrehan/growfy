@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from 'components/header'
 import Button from 'components/button'
 import Hero from 'components/hero'
+import Client from 'components/client'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -21,31 +22,8 @@ const Home = () => (
 
       <main className="page">
         <Hero />
+        <Client />
 
-        <section className="page__clients clients">
-          <div className="clients__container">
-            <h2 className="clients__title">
-              TRUSTED BY startups and large enterprises
-            </h2>
-            <div className="clients__items">
-              <div className="clients__item">
-                <img src="/img/clients-01.svg" alt="client" />
-              </div>
-              <div className="clients__item">
-                <img src="/img/clients-02.svg" alt="client" />
-              </div>
-              <div className="clients__item">
-                <img src="/img/clients-03.svg" alt="client" />
-              </div>
-              <div className="clients__item">
-                <img src="/img/clients-04.svg" alt="client" />
-              </div>
-              <div className="clients__item">
-                <img src="/img/clients-05.svg" alt="client" />
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="page__services services">
           <div className="services__container">
             <div className="services__content">
