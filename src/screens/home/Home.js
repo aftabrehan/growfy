@@ -7,6 +7,7 @@ import Hero from 'components/hero'
 import Client from 'components/client'
 import Services from 'components/services'
 import Choose from 'components/choose'
+import Adv from 'components/adv'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -27,44 +28,7 @@ const Home = () => (
         <Client />
         <Services />
         <Choose />
-
-        <section className="page__advantages advantages">
-          <div className="advantages__container">
-            <div className="advantages__items">
-              <article className="advantages__item">
-                <h4 className="advantages__value">1.2M+</h4>
-                <div className="advantages__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim.
-                </div>
-              </article>
-              <article className="advantages__item">
-                <h4 className="advantages__value">3.4B</h4>
-                <div className="advantages__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim.
-                </div>
-              </article>
-              <article className="advantages__item">
-                <h4 className="advantages__value">98%</h4>
-                <div className="advantages__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim.
-                </div>
-              </article>
-              <article className="advantages__item">
-                <h4 className="advantages__value">10+</h4>
-                <div className="advantages__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim.
-                </div>
-              </article>
-            </div>
-            <div className="advantages__image">
-              <img src="/img/advantage-image-01.jpg" alt="Image" />
-            </div>
-          </div>
-        </section>
+        <Adv />
 
         <section className="page__testimonials testimonials">
           <div className="testimonials__container">
