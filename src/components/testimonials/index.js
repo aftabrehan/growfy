@@ -1,3 +1,3 @@
-import Adv from './Adv'
+import Testimonials from './Testimonials'
 
-export default Adv
+export default Testimonials
