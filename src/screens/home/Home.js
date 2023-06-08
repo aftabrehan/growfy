@@ -8,6 +8,7 @@ import Client from 'components/client'
 import Services from 'components/services'
 import Choose from 'components/choose'
 import Adv from 'components/adv'
+import Testimonials from 'components/testimonials/Testimonials'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -29,113 +30,7 @@ const Home = () => (
         <Services />
         <Choose />
         <Adv />
-
-        <section className="page__testimonials testimonials">
-          <div className="testimonials__container">
-            <div className="testimonials__header header-main">
-              <a href="" className="header-main__label">
-                testimonials
-              </a>
-              <h2 className="header-main__title">See what our clients say</h2>
-              <div className="header-main__body">
-                <div className="header-main__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero.
-                  </p>
-                </div>
-                <div className="header-main__actions">
-                  <Button label="Get in touch" />
-                </div>
-              </div>
-            </div>
-            <div className="testimonials__items">
-              <article className="testimonials__item item-testimonial">
-                <div className="item-testimonial__user user-testimonial">
-                  <div className="user-testimonial__avatar user-testimonial__avatar_1">
-                    <img src="/img/testimonials-image-01.jpg" alt="Avatars" />
-                  </div>
-                  <div className="user-testimonial__body">
-                    <div className="user-testimonial__title">John Doe</div>
-                    <div className="user-testimonial__company">
-                      Company Name
-                    </div>
-                  </div>
-                </div>
-                <h4 className="item-testimonial__title">
-                  I recommend this agency
-                </h4>
-                <div className="item-testimonial__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero.
-                  </p>
-                </div>
-                <div className="item-testimonial__raiting">
-                  <img src="/img/testimonials-raiting.svg" alt="raiting" />
-                </div>
-              </article>
-              <article className="testimonials__item item-testimonial">
-                <div className="item-testimonial__user user-testimonial">
-                  <div className="user-testimonial__avatar user-testimonial__avatar_2">
-                    <img src="/img/testimonials-image-02.jpg" alt="Avatars" />
-                  </div>
-                  <div className="user-testimonial__body">
-                    <div className="user-testimonial__title">Alice Smith</div>
-                    <div className="user-testimonial__company">
-                      Company Name
-                    </div>
-                  </div>
-                </div>
-                <h4 className="item-testimonial__title">
-                  The support is awesome
-                </h4>
-                <div className="item-testimonial__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero.
-                  </p>
-                </div>
-                <div className="item-testimonial__raiting">
-                  <img src="/img/testimonials-raiting.svg" alt="raiting" />
-                </div>
-              </article>
-              <article className="testimonials__item item-testimonial">
-                <div className="item-testimonial__user user-testimonial">
-                  <div className="user-testimonial__avatar user-testimonial__avatar_3">
-                    <img src="/img/testimonials-image-03.jpg" alt="Avatars" />
-                  </div>
-                  <div className="user-testimonial__body">
-                    <div className="user-testimonial__title">Sophia Miller</div>
-                    <div className="user-testimonial__company">
-                      Company Name
-                    </div>
-                  </div>
-                </div>
-                <h4 className="item-testimonial__title">
-                  A game changer for us
-                </h4>
-                <div className="item-testimonial__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero.
-                  </p>
-                </div>
-                <div className="item-testimonial__raiting">
-                  <img src="/img/testimonials-raiting.svg" alt="raiting" />
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+        <Testimonials />
 
         <section className="page__blog blog">
           <div className="blog__container">
