@@ -1,35 +1,71 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 import Button from 'components/button'
+
+import { getCommonMotionProps } from 'lib/utils'
 
 import stl from './Testimonials.module.scss'
 
 const Testimonials = () => {
+  const [animation, setAnimation] = useState(false)
+
+  const motionProps = getCommonMotionProps(animation, setAnimation)
+
+  const getScaleAnimation = (delay = 0.25) => {
+    return {
+      onViewportEnter: () => setAnimation(true),
+      initial: { scale: '0', opacity: 0 },
+      animate: {
+        scale: animation ? 1 : 0,
+        opacity: animation ? 1 : 0,
+      },
+      transition: { duration: 0.5, delay },
+    }
+  }
+
   return (
     <section className={stl.testimonials}>
       <div className={stl.testimonials__container}>
         <div className={clsx(stl.testimonials__header, stl.header_main)}>
-          <a href="" className={stl.header_main__label}>
+          <motion.a
+            {...motionProps}
+            transition={{ duration: 0.75, delay: 0.1 }}
+            href="#"
+            className={stl.header_main__label}
+          >
             testimonials
-          </a>
-          <h2 className={stl.header_main__title}>See what our clients say</h2>
+          </motion.a>
+          <motion.h2 {...motionProps} className={stl.header_main__title}>
+            See what our clients say
+          </motion.h2>
           <div className={stl.header_main__body}>
-            <div className={stl.header_main__text}>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.15 }}
+              className={stl.header_main__text}
+            >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                 commodo diam libero.
               </p>
-            </div>
-            <div className={stl.header_main__actions}>
+            </motion.div>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.2 }}
+              className={stl.header_main__actions}
+            >
               <Button label="Get in touch" />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className={stl.testimonials__items}>
-          <article
+          <motion.article
+            {...getScaleAnimation(0.35)}
             className={clsx(stl.testimonials__item, stl.item_testimonial)}
           >
             <div
@@ -64,8 +100,9 @@ const Testimonials = () => {
             <div className={stl.item_testimonial__raiting}>
               <img src="/img/testimonials-raiting.svg" alt="raiting" />
             </div>
-          </article>
-          <article
+          </motion.article>
+          <motion.article
+            {...getScaleAnimation(0.4)}
             className={clsx(stl.testimonials__item, stl.item_testimonial)}
           >
             <div
@@ -100,8 +137,9 @@ const Testimonials = () => {
             <div className={stl.item_testimonial__raiting}>
               <img src="/img/testimonials-raiting.svg" alt="raiting" />
             </div>
-          </article>
-          <article
+          </motion.article>
+          <motion.article
+            {...getScaleAnimation(0.45)}
             className={clsx(stl.testimonials__item, stl.item_testimonial)}
           >
             <div
@@ -136,7 +174,7 @@ const Testimonials = () => {
             <div className={stl.item_testimonial__raiting}>
               <img src="/img/testimonials-raiting.svg" alt="raiting" />
             </div>
-          </article>
+          </motion.article>
         </div>
       </div>
     </section>

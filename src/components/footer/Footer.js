@@ -1,28 +1,48 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 import Button from 'components/button'
+
+import { getCommonMotionProps } from 'lib/utils'
 
 import stl from './Footer.module.scss'
 
 const Footer = () => {
+  const [animation, setAnimation] = useState(false)
+
+  const motionProps = getCommonMotionProps(animation, setAnimation)
+
   return (
     <footer className={stl.footer}>
       <div className={clsx(stl.footer__main, stl.main_footer)}>
         <div className={stl.main_footer__container}>
           <div className={stl.main_footer__column}>
-            <a href="#" className={stl.main_footer__logo}>
+            <motion.a
+              {...motionProps}
+              href="#"
+              className={stl.main_footer__logo}
+            >
               <img src="/img/Logo.svg" alt="Logo" />
-            </a>
-            <div className={clsx(stl.main_footer__text, stl.text)}>
+            </motion.a>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.15 }}
+              className={clsx(stl.main_footer__text, stl.text)}
+            >
               <p>
                 Growfy is a template highly suitable for modern marketing
                 agencies, digital studios, startups and businesses. The design
                 is made in the dark style, which makes the site memorable and
                 you can easily adapt it to your brand.
               </p>
-            </div>
-            <div className={clsx(stl.main_footer__social, stl.social)}>
+            </motion.div>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.25 }}
+              className={clsx(stl.main_footer__social, stl.social)}
+            >
               <a href="#" className={stl.social__link}>
                 <img src="/img/footer-image-01.svg" alt="social" />
               </a>
@@ -38,12 +58,16 @@ const Footer = () => {
               <a href="#" className={stl.social__link}>
                 <img src="/img/footer-image-05.svg" alt="social" />
               </a>
-            </div>
+            </motion.div>
           </div>
           <div className={stl.main_footer__column}>
             <div className={stl.main_footer__label}>Pages</div>
             <nav className={clsx(stl.main_footer__menu, stl.menu_footer)}>
-              <ul className={stl.menu_footer__list}>
+              <motion.ul
+                {...motionProps}
+                transition={{ duration: 0.75, delay: 0.3 }}
+                className={stl.menu_footer__list}
+              >
                 <li className={stl.menu_footer__item}>
                   <a href="#" className={stl.menu_footer__link}>
                     Home
@@ -74,13 +98,17 @@ const Footer = () => {
                     Contact
                   </a>
                 </li>
-              </ul>
+              </motion.ul>
             </nav>
           </div>
           <div className={stl.main_footer__column}>
             <div className={stl.main_footer__label}>Utility pages</div>
             <nav className={clsx(stl.main_footer__menu, stl.menu_footer)}>
-              <ul className={stl.menu_footer__list}>
+              <motion.ul
+                {...motionProps}
+                transition={{ duration: 0.75, delay: 0.35 }}
+                className={stl.menu_footer__list}
+              >
                 <li className={stl.menu_footer__item}>
                   <a href="#" className={stl.menu_footer__link}>
                     Instructions
@@ -111,17 +139,29 @@ const Footer = () => {
                     Password protected
                   </a>
                 </li>
-              </ul>
+              </motion.ul>
             </nav>
           </div>
           <div className={stl.main_footer__column}>
-            <div className={stl.main_footer__label}>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.25 }}
+              className={stl.main_footer__label}
+            >
               Subscribe to our newsletter
-            </div>
-            <div className={clsx(stl.main_footer__text, stl.text)}>
+            </motion.div>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.25 }}
+              className={clsx(stl.main_footer__text, stl.text)}
+            >
               Lorem ipsum dolor sit am consectetur adipiscing
-            </div>
-            <form action="" className={stl.subscribe}>
+            </motion.div>
+            <motion.form
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.25 }}
+              className={stl.subscribe}
+            >
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -129,15 +169,7 @@ const Footer = () => {
                 className={stl.subscribe__input}
               />
               <Button type="submit" label="Subscribe" />
-            </form>
-          </div>
-        </div>
-      </div>
-      <div className={clsx(stl.footer__bottom, stl.bottom_footer)}>
-        <div className={stl.bottom_footer__container}>
-          <div className={stl.bottom_footer__copy}>
-            © Growfy — Powered by Webflow - Growfy Webflow Template — Created by
-            Elison Santos.
+            </motion.form>
           </div>
         </div>
       </div>

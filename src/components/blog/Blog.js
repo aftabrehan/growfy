@@ -1,37 +1,73 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 import Button from 'components/button'
+
+import { getCommonMotionProps } from 'lib/utils'
 
 import stl from './Blog.module.scss'
 
 const Blog = () => {
+  const [animation, setAnimation] = useState(false)
+
+  const motionProps = getCommonMotionProps(animation, setAnimation)
+
+  const getScaleAnimation = (delay = 0.25) => {
+    return {
+      onViewportEnter: () => setAnimation(true),
+      initial: { scale: '0', opacity: 0 },
+      animate: {
+        scale: animation ? 1 : 0,
+        opacity: animation ? 1 : 0,
+      },
+      transition: { duration: 0.5, delay },
+    }
+  }
+
   return (
     <section className={stl.blog}>
       <div className={stl.blog__container}>
         <div className={clsx(stl.blog__header, stl.header_main)}>
-          <a href="" className="header_main__label">
-            Blog
-          </a>
-          <h2 className={stl.header_main__title}>
+          <motion.a
+            {...motionProps}
+            transition={{ duration: 0.75, delay: 0.1 }}
+            href="#"
+            className={stl.header_main__label}
+          >
+            blog
+          </motion.a>
+          <motion.h2 {...motionProps} className={stl.header_main__title}>
             Read our <br /> articles & news
-          </h2>
+          </motion.h2>
           <div className={stl.header_main__body}>
-            <div className={stl.header_main__text}>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.15 }}
+              className={stl.header_main__text}
+            >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                 commodo diam libero.
               </p>
-            </div>
-            <div className={stl.header_main__actions}>
+            </motion.div>
+            <motion.div
+              {...motionProps}
+              transition={{ duration: 0.75, delay: 0.2 }}
+              className={stl.header_main__actions}
+            >
               <Button label="All Posts" />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className={stl.blog__items}>
-          <artcile className={clsx(stl.blog__item, stl.item_blog)}>
+          <motion.article
+            {...getScaleAnimation(0.25)}
+            className={clsx(stl.blog__item, stl.item_blog)}
+          >
             <div className={stl.item_blog__header}>
               <a href="" className={stl.item_blog__image}>
                 <img src="/img/blog-image-01.jpg" alt="image" />
@@ -58,8 +94,11 @@ const Blog = () => {
                 Read now
               </a>
             </div>
-          </artcile>
-          <artcile className={clsx(stl.blog__item, stl.item_blog)}>
+          </motion.article>
+          <motion.article
+            {...getScaleAnimation(0.35)}
+            className={clsx(stl.blog__item, stl.item_blog)}
+          >
             <div className={stl.item_blog__header}>
               <a href="" className={stl.item_blog__image}>
                 <img src="/img/blog-image-02.jpg" alt="image" />
@@ -86,8 +125,11 @@ const Blog = () => {
                 Read now
               </a>
             </div>
-          </artcile>
-          <artcile className={clsx(stl.blog__item, stl.item_blog)}>
+          </motion.article>
+          <motion.article
+            {...getScaleAnimation(0.4)}
+            className={clsx(stl.blog__item, stl.item_blog)}
+          >
             <div className={stl.item_blog__header}>
               <a href="" className={stl.item_blog__image}>
                 <img src="/img/blog-image-03.jpg" alt="image" />
@@ -114,7 +156,7 @@ const Blog = () => {
                 Read now
               </a>
             </div>
-          </artcile>
+          </motion.article>
         </div>
       </div>
     </section>

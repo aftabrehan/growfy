@@ -14,8 +14,6 @@ import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
 
-// https://growfy-template.webflow.io
-
 const Home = () => (
   <div className={stl.wrapper}>
     <Head>
@@ -35,6 +33,7 @@ const Home = () => (
         <Blog />
         <CTA />
       </main>
+
       <Footer />
     </div>
   </div>
