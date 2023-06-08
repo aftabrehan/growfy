@@ -6,6 +6,7 @@ import Button from 'components/button'
 import Hero from 'components/hero'
 import Client from 'components/client'
 import Services from 'components/services'
+import Choose from 'components/choose'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -25,44 +26,8 @@ const Home = () => (
         <Hero />
         <Client />
         <Services />
+        <Choose />
 
-        <section className="page__why why">
-          <div className="why__container">
-            <div className="why__images images-why">
-              <div className="images-why__item images-why__item_1">
-                <img src="/img/why-image-01.jpg" alt="Image" />
-              </div>
-              <div className="images-why__item images-why__item_2">
-                <img src="/img/why-image-02.jpg" alt="Image" />
-              </div>
-            </div>
-            <div className="why__content">
-              <div className="why__header header-main">
-                <a href="" className="header-main__label">
-                  why choose us
-                </a>
-                <h2 className="header-main__title">
-                  We help great brands scale with content marketing.
-                </h2>
-                <div className="header-main__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor.
-                  </p>
-                </div>
-                <ul className="header-main__list">
-                  <li>This is some text inside of a div.</li>
-                  <li>This is some text inside of a div.</li>
-                  <li>This is some text inside of a div.</li>
-                  <li>This is some text inside of a div.</li>
-                  <li>This is some text inside of a div.</li>
-                  <li>This is some text inside of a div.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="page__advantages advantages">
           <div className="advantages__container">
             <div className="advantages__items">
@@ -100,6 +65,7 @@ const Home = () => (
             </div>
           </div>
         </section>
+
         <section className="page__testimonials testimonials">
           <div className="testimonials__container">
             <div className="testimonials__header header-main">
@@ -206,6 +172,7 @@ const Home = () => (
             </div>
           </div>
         </section>
+
         <section className="page__blog blog">
           <div className="blog__container">
             <div className="blog__header header-main">
@@ -317,6 +284,7 @@ const Home = () => (
             </div>
           </div>
         </section>
+
         <section className="page__start start">
           <div className="start__container">
             <div className="start__body">
