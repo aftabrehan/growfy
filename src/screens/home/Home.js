@@ -5,6 +5,7 @@ import Header from 'components/header'
 import Button from 'components/button'
 import Hero from 'components/hero'
 import Client from 'components/client'
+import Services from 'components/services'
 import Footer from 'components/footer'
 
 import stl from './Home.module.scss'
@@ -23,77 +24,8 @@ const Home = () => (
       <main className="page">
         <Hero />
         <Client />
+        <Services />
 
-        <section className="page__services services">
-          <div className="services__container">
-            <div className="services__content">
-              <div className="services__header header-main">
-                <a href="" className="header-main__label">
-                  services
-                </a>
-                <h2 className="header-main__title">Services we offer</h2>
-                <div className="header-main__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor.
-                  </p>
-                </div>
-                <div className="header-main__actions">
-                  <Button label="All services" />
-                </div>
-              </div>
-            </div>
-            <div className="services__items">
-              <div className="services__column">
-                <article className="services__item item-service">
-                  <div className="item-service__icon">
-                    <img src="/img/Services-01.svg" alt="Service" />
-                  </div>
-                  <h4 className="item-service__title">
-                    Social Media Marketing
-                  </h4>
-                  <div className="item-service__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    lobortis arcu enim urna adipiscing praesent velit.
-                  </div>
-                </article>
-                <article className="services__item item-service">
-                  <div className="item-service__icon">
-                    <img src="/img/Services-02.svg" alt="Service" />
-                  </div>
-                  <h4 className="item-service__title">Email Marketing</h4>
-                  <div className="item-service__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    lobortis arcu enim urna adipiscing praesent velit.
-                  </div>
-                </article>
-              </div>
-              <div className="services__column">
-                <article className="services__item item-service">
-                  <div className="item-service__icon">
-                    <img src="/img/Services-03.svg" alt="Service" />
-                  </div>
-                  <h4 className="item-service__title">Paid Advertising</h4>
-                  <div className="item-service__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    lobortis arcu enim urna adipiscing praesent velit.
-                  </div>
-                </article>
-                <article className="services__item item-service">
-                  <div className="item-service__icon">
-                    <img src="/img/Services-04.svg" alt="Service" />
-                  </div>
-                  <h4 className="item-service__title">SEO Optimization</h4>
-                  <div className="item-service__text text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    lobortis arcu enim urna adipiscing praesent velit.
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="page__why why">
           <div className="why__container">
             <div className="why__images images-why">
