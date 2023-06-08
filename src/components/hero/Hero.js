@@ -14,7 +14,7 @@ const Hero = () => {
 
   const motionProps = getCommonMotionProps(animation, setAnimation)
 
-  const getImageAnimation = (delay = 0.25) => {
+  const getScaleAnimation = (delay = 0.25) => {
     return {
       onViewportEnter: () => setAnimation(true),
       initial: { scale: '0', opacity: 0 },
@@ -59,13 +59,13 @@ const Hero = () => {
         <div className={clsx(stl.main__images, stl.images_main)}>
           <div className={stl.images_main__column}>
             <motion.div
-              {...getImageAnimation(0.25)}
+              {...getScaleAnimation(0.25)}
               className={clsx(stl.images_main__item, stl.images_main__item_1)}
             >
               <img src="/img/main-img-01.jpg" alt="Image" />
             </motion.div>
             <motion.div
-              {...getImageAnimation(0.35)}
+              {...getScaleAnimation(0.35)}
               className={clsx(stl.images_main__item, stl.images_main__item_2)}
             >
               <img src="/img/main-img-02.jpg" alt="Image" />
@@ -73,13 +73,13 @@ const Hero = () => {
           </div>
           <div className={stl.images_main__column}>
             <motion.div
-              {...getImageAnimation(0.4)}
+              {...getScaleAnimation(0.4)}
               className={clsx(stl.images_main__item, stl.images_main__item_3)}
             >
               <img src="/img/main-img-03.jpg" alt="Image" />
             </motion.div>
             <motion.div
-              {...getImageAnimation(0.45)}
+              {...getScaleAnimation(0.45)}
               className={clsx(stl.images_main__item, stl.images_main__item_4)}
             >
               <img src="/img/main-img-04.jpg" alt="Image" />
