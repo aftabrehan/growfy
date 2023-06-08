@@ -136,8 +136,8 @@ const Footer = () => {
       <div className={clsx(stl.footer__bottom, stl.bottom_footer)}>
         <div className={stl.bottom_footer__container}>
           <div className={stl.bottom_footer__copy}>
-            © Growfy — Powered by Webflow Logo - Growfy Webflow Template —
-            Created by Elison Santos.
+            © Growfy — Powered by Webflow - Growfy Webflow Template — Created by
+            Elison Santos.
           </div>
         </div>
       </div>
