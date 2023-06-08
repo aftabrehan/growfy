@@ -1,3 +1,5 @@
+@import 'styles/common';
+
 .header-main__label {
   display: inline-block;
   border: 1px solid rgba(129, 129, 139, 0.2);
@@ -136,14 +138,6 @@
     flex-direction: column;
   }
 }
-
-.text {
-  color: #81818b;
-  line-height: 1.5;
-}
-
-/* Header */
-/*===================================================================*/
 
 .header {
   position: fixed;
