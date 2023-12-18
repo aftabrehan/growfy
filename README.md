@@ -1,44 +1,44 @@
-# Growfy
+# Modern Marketing Agency Template
 
-A dark web landing page for marketing solution build with React, Next.js, SCSS, and deployed on Vercel.
+Growfy is a modern marketing agency and digital studio template that is highly suitable for startups and businesses. The dark style of the design makes the website memorable. It was created using the latest technologies like React JS, Next.js, Sass, and Framer motion, and is deployed on Vercel. The template includes sections such as Hero, services, Why Choose Us, Testimonials, Blogs, CTA, and more. The layout is responsive and can adapt to smaller and medium screens. The source code is available on GitHub, so feel free to explore and review it.
 
-##### Preview
+| [View Project 🔥](https://aftabrehan.com/portfolio/modern-marketing-agency-template) | [Live Preview 🚀](https://growffy.vercel.app) |
+| ------------------------------------------------------------------------------------ | --------------------------------------------- |
 
-<div align="center">
-  <img src="https://github.com/aftabrehan/growfy/assets/93012310/0b21f3df-3aac-4a96-b0e5-c0be714ead0a" alt="growfy-poster"/>
+### Preview
+
+<div>
+  <a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/11184789eac8492fb4f3971cd9ec455b-with-play.gif">
+  </a>
 </div>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+|                                                                                                              The                                                                                                              |                                                                                                            Project                                                                                                            |                                                                                                             Shots                                                                                                             |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.648cf122.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.0976213a.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.f36b3838.png&w=1920&q=75"></a></div> |
+| <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F4.e382987e.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F5.df88a8fc.png&w=1920&q=75"></a></div> | <div><a href="https://aftabrehan.com/portfolio/modern-marketing-agency-template"><img style="max-width:220px;" src="https://aftabrehan.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6.3547c3a0.png&w=1920&q=75"></a></div> |
 
-## Getting Started
+<hr />
 
-First, run the development server:
+### Getting Started
 
-```bash
-npm run dev
-# or
+1. Clone the repository.
+
+```
+git clone https://github.com/aftabrehan/growfy
+```
+
+2. Install the required dependencies.
+
+```
+yarn
+```
+
+3. Start the development server.
+
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> [!NOTE]
+> This project is created solely for portfolio purposes, and you are free to use it as you see fit.
