@@ -25,7 +25,7 @@ Growfy is a modern marketing agency and digital studio template that is highly s
 1. Clone the repository.
 
 ```
-git clone https://github.com/aftabrehan/growfy
+git clone https://github.com/aftabrehan/growfy.git
 ```
 
 2. Install the required dependencies.
