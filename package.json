@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^6.3.1",
-    "axios": "^0.26.1",
+    "axios": "^1.15.0",
     "browserslist": "^4.21.7",
     "caniuse-lite": "^1.0.30001492",
     "clsx": "^1.2.1",
