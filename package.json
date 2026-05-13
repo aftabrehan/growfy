@@ -23,7 +23,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "formik": "^2.2.9",
     "framer-motion": "^10.12.16",
-    "next": "12",
+    "next": "15",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
